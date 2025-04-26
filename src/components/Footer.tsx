@@ -22,7 +22,7 @@ const Footer: React.FC = () => {
             </div>
             <p className="text-slate-300 mb-4">
               Providing professional and compassionate home care services
-              throughout New York.
+              throughout Atlanta Georgia.
             </p>
             <div className="flex space-x-4">
               <a
