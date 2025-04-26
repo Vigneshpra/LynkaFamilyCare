@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-primary: #4A90E2;
+  --color-primary-dark: #3A7BC8;
+  --color-secondary: #2DCCA7;
+  --color-secondary-dark: #25B696;
+}
+
+@layer base {
+  body {
+    @apply font-sans text-slate-800;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-semibold;
+  }
+}
+
+@layer components {
+  .nav-link {
+    @apply font-medium text-slate-700 hover:text-primary transition-colors;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center px-6 py-3 bg-primary text-white font-medium rounded-md hover:bg-primary-dark transition-colors focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center px-6 py-3 bg-white text-primary font-medium rounded-md border border-primary hover:bg-primary/5 transition-colors focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2;
+  }
+
+  .btn-white {
+    @apply inline-flex items-center justify-center px-6 py-3 bg-white text-primary font-medium rounded-md hover:bg-slate-50 transition-colors focus:outline-none focus:ring-2 focus:ring-white;
+  }
+
+  .btn-outline-white {
+    @apply inline-flex items-center justify-center px-6 py-3 bg-transparent text-white font-medium rounded-md border border-white hover:bg-white/10 transition-colors focus:outline-none focus:ring-2 focus:ring-white;
+  }
+}
