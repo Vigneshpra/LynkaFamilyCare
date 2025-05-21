@@ -34,6 +34,9 @@ const Router: React.FC = () => {
       '/contact': 'Contact Us | Lynka Family Care',
       '/testimonials': 'Client Testimonials | Lynka Family Care',
       '/blog': 'Healthcare Resources & Blog | Lynka Family Care',
+      '/blog/1': 'Tips for Preventing Falls in the Elderly | Lynka Family Care',
+      '/blog/2': 'Understanding Dementia: A Guide for Caregivers | Lynka Family Care',
+      '/blog/3': 'Nutrition Tips for Seniors | Lynka Family Care',
     };
 
     document.title = pathTitles[currentPath] || 'Page Not Found | Lynka Family Care';
@@ -50,7 +53,7 @@ const Router: React.FC = () => {
       return <ContactPage />;
     case '/testimonials':
       return <TestimonialsPage />;
-     case '/blog':
+    case '/blog':
       return <BlogPage />;
     case '/blog/1':
       return <PreventingFalls />;
