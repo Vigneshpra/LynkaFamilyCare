@@ -7,6 +7,7 @@ interface BlogPost {
   title: string;
   excerpt: string;
   image: string;
+  imageCredit: string;
   date: string;
   readTime: string;
   category: string;
@@ -17,8 +18,9 @@ const BlogPreview: React.FC = () => {
     {
       id: "1",
       title: "Tips for Preventing Falls in the Elderly",
-      excerpt: "Learn about practical strategies to create a safer home environment and reduce the risk of falls for seniors.",
+      excerpt: "Learn about practical strategies to create a safer home environment and reduce the risk of falls for seniors. Our comprehensive guide covers home modifications, exercise recommendations, and daily habits that can help prevent falls.",
       image: "https://images.pexels.com/photos/7551838/pexels-photo-7551838.jpeg?auto=compress&cs=tinysrgb&w=600",
+      imageCredit: "Photo by RDNE Stock project from Pexels",
       date: "April 15, 2025",
       readTime: "5 min read",
       category: "Safety"
@@ -26,8 +28,9 @@ const BlogPreview: React.FC = () => {
     {
       id: "2",
       title: "Understanding Dementia: A Guide for Caregivers",
-      excerpt: "This comprehensive guide helps family caregivers understand dementia and provides effective communication strategies.",
+      excerpt: "This comprehensive guide helps family caregivers understand dementia, its various types, stages, and provides effective communication strategies for better care and support.",
       image: "https://images.pexels.com/photos/7551621/pexels-photo-7551621.jpeg?auto=compress&cs=tinysrgb&w=600",
+      imageCredit: "Photo by RDNE Stock project from Pexels",
       date: "April 8, 2025",
       readTime: "7 min read",
       category: "Caregiving"
@@ -35,8 +38,9 @@ const BlogPreview: React.FC = () => {
     {
       id: "3",
       title: "Nutrition Tips for Seniors: Maintaining a Healthy Diet",
-      excerpt: "Discover the important nutrients seniors need and simple ways to incorporate them into daily meals.",
+      excerpt: "Discover the important nutrients seniors need and simple ways to incorporate them into daily meals. Learn about age-specific dietary requirements and practical meal planning tips.",
       image: "https://images.pexels.com/photos/5906707/pexels-photo-5906707.jpeg?auto=compress&cs=tinysrgb&w=600",
+      imageCredit: "Photo by Karolina Grabowska from Pexels",
       date: "April 1, 2025",
       readTime: "6 min read",
       category: "Nutrition"
@@ -89,13 +93,16 @@ const BlogPreview: React.FC = () => {
                   </h3>
                 </Link>
                 <p className="text-slate-600 mb-4">{post.excerpt}</p>
-                <Link 
-                  to={`/blog/${post.id}`}
-                  className="inline-flex items-center text-primary font-medium hover:text-primary-dark transition-colors"
-                >
-                  Read More
-                  <ArrowRight className="ml-2 h-4 w-4 transform group-hover:translate-x-1 transition-transform" />
-                </Link>
+                <div className="flex flex-col space-y-2">
+                  <Link 
+                    to={`/blog/${post.id}`}
+                    className="inline-flex items-center text-primary font-medium hover:text-primary-dark transition-colors"
+                  >
+                    Read More
+                    <ArrowRight className="ml-2 h-4 w-4 transform group-hover:translate-x-1 transition-transform" />
+                  </Link>
+                  <p className="text-xs text-slate-500 italic">{post.imageCredit}</p>
+                </div>
               </div>
             </div>
           ))}
