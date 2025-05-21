@@ -20,7 +20,7 @@ const About: React.FC = () => {
             <h2 className="text-3xl md:text-4xl font-bold text-slate-800 mb-6">Why Choose Lynka Family Care?</h2>
             <p className="text-lg text-slate-600 mb-6">
               Lynka Family Care is a licensed home care agency dedicated to providing exceptional care services 
-              throughout New York. Our mission is to help seniors and individuals with disabilities maintain their 
+              throughout Georgia. Our mission is to help seniors and individuals with disabilities maintain their 
               independence while receiving compassionate, professional care in the comfort of their homes.
             </p>
             <p className="text-lg text-slate-600 mb-8">
