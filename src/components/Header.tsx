@@ -60,7 +60,7 @@ const Header: React.FC = () => {
               className="flex items-center text-primary font-medium hover:text-primary-dark transition-colors"
             >
               <Phone className="h-5 w-5 mr-2" />
-              <span>(516) 243-8130</span>
+              <span>(404) 337-2464</span>
             </a>
           </div>
 
