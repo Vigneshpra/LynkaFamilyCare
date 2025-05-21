@@ -48,6 +48,7 @@ const Header: React.FC = () => {
             <Link to="/testimonials" className="nav-link">
               Testimonials
             </Link>
+            <Link to="/blog" className="nav-link">Blog</Link>
             <Link to="/contact" className="nav-link">
               Contact
             </Link>
@@ -110,6 +111,7 @@ const Header: React.FC = () => {
               >
                 Testimonials
               </Link>
+              <Link to="/blog" className="block py-2 nav-link" onClick={() => setIsMenuOpen(false)}>Blog</Link>
               <Link
                 to="/contact"
                 className="block py-2 nav-link"
