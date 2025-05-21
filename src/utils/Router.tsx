@@ -6,6 +6,9 @@ import ContactPage from '../pages/ContactPage';
 import TestimonialsPage from '../pages/TestimonialsPage';
 import BlogPage from '../pages/BlogPage';
 import NotFoundPage from '../pages/NotFoundPage';
+import PreventingFalls from '../pages/articles/PreventingFalls';
+import UnderstandingDementia from '../pages/articles/UnderstandingDementia';
+import NutritionTips from '../pages/articles/NutritionTips';
 
 const Router: React.FC = () => {
   const [currentPath, setCurrentPath] = useState(window.location.pathname);
@@ -47,8 +50,14 @@ const Router: React.FC = () => {
       return <ContactPage />;
     case '/testimonials':
       return <TestimonialsPage />;
-    case '/blog':
+     case '/blog':
       return <BlogPage />;
+    case '/blog/1':
+      return <PreventingFalls />;
+    case '/blog/2':
+      return <UnderstandingDementia />;
+    case '/blog/3':
+      return <NutritionTips />;
     default:
       return <NotFoundPage />;
   }
